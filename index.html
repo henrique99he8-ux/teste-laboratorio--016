@@ -1,1 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#111111">
+    <title>Laboratório 016</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <main class="container">
+
+        <section class="card">
+            <div class="badge">EXPERIMENTO 016</div>
+
+            <h1>Laboratório</h1>
+
+            <p class="subtitle">
+                Um pequeno experimento para descobrir até onde o navegador consegue ir.
+            </p>
+
+            <div class="status-box">
+                <span class="status-label">STATUS</span>
+                <span id="status">Aguardando início</span>
+            </div>
+
+            <div class="actions">
+                <button id="primaryButton">Iniciar</button>
+                <button id="secondaryButton" class="secondary">
+                    Ver informações
+                </button>
+            </div>
+
+            <div id="workspace" class="workspace hidden">
+
+                <div class="section">
+                    <h2>Área de trabalho</h2>
+
+                    <textarea
+                        id="editor"
+                        placeholder="O conteúdo aparecerá aqui..."
+                    ></textarea>
+                </div>
+
+                <div class="buttons-grid">
+                    <button id="actionOne">Ação 1</button>
+                    <button id="actionTwo">Ação 2</button>
+                    <button id="actionThree">Ação 3</button>
+                    <button id="actionFour">Ação 4</button>
+                </div>
+
+                <div id="result" class="result">
+                    Nenhuma ação executada.
+                </div>
+
+            </div>
+
+            <div id="info" class="info hidden">
+                <h2>Sobre o experimento</h2>
+
+                <p>
+                    Este projeto foi criado para testar uma capacidade do navegador
+                    que pode ser útil em projetos futuros.
+                </p>
+
+                <p>
+                    Algumas ações podem solicitar autorização do navegador.
+                </p>
+
+                <p>
+                    Nenhuma informação é enviada para um servidor próprio.
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
